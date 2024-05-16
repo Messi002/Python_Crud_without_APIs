@@ -16,10 +16,12 @@
     
     
 
+    {% for task in tasks %}
+ 
     <div class="todo-list-item">
       <div class="task">
         <input type="checkbox" />
-        <p>Todo item</p>
+        <p>{{task.title}}</p>
       </div>
 
       <div class="btn-container">
@@ -35,7 +37,7 @@
         </div>
       </div>
     </div>
-      
+    {% endfor %}
       
    
 
