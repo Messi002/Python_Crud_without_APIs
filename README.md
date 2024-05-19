@@ -8,3 +8,6 @@ django-admin startproject new_todo
 cd new_todo  
 python manage.py startapp todoapp
  code . 
+
+
+to run project:  python manage.py runserver 8001 
