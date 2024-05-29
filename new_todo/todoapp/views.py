@@ -31,5 +31,6 @@ def task_delete(request, pk):
     task = Task.objects.get(id=pk)
     if request.method == 'POST' :
         task.delete()
+        return redirect("task-list") #re-directing to the task view by using the name
     context = {"task" : task}
     return render(request, "task_delete.html", context)
